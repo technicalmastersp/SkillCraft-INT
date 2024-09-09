@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillCraft | TechnicalMasterSP</title>
+    <style>
+      :root{
+        font-size: 62.5%;
+        /* 1rem = 10px */
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+      }
+      .flex,
+      .task {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      hr{
+        border: .1rem solid #ffff00;
+        margin: 5rem 0 0 0;
+      }
+      .project {
+        width: 80vw;
+      }
+      .levelTag{
+        font-size: 4.5rem;
+        color: chocolate;
+        padding: 1rem 0 0rem 0;
+      }
+      .div1,
+      .div2,
+      .div3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2.5rem;
+      }
+      .div1 h2,
+      .div2 h2,
+      .div3 h2 {
+        padding: 4rem 0 .5rem 0;
+      }
+      .task {
+        justify-content: space-between !important;
+        width: -webkit-fill-available;
+        padding: 0rem 0 0rem 0;
+      }
+      .task h2{
+        font-size: 2.5rem;
+        padding-bottom: 1rem;
+        /* color: #ffffff; */
+      }
+      .task div:nth-child(1),
+      .task div:nth-child(2),
+      .task div:nth-child(3){
+        color: #ffffff;
+      }
+      .projectName{
+        padding: 0 0 1rem 0 !important;
+        color: #ff00f2;
+        font-size: 3.5rem !important;
+      }
+      button {
+        background-color: #000000;
+        padding: .8rem 1.6rem;
+        border: .2rem solid #00ff00;
+        border-radius: 1rem;
+      }
+      a button {
+        color: #00ff00;
+        text-decoration: none;
+        font-size: 2rem;
+      }
+      button:hover{
+        border: .2rem solid #000000;
+        background-color: #00ff00;
+        color: #000000;
+        cursor: pointer;
+      }
+      button a:hover{
+        color: #000000;
+      }
+      button:active{
+        background-color: #24ae24;
+      }
+      .colomn{
+        flex-direction: column !important;
+      }
+      .hide{
+        visibility: hidden;
+      }
+
+      /* *******************************************************   Responsive Styling   ******************************************************* */
+
+      @media (max-width: 2060px){
+        :root{
+          font-size: 62%;
+        }
+      }
+      @media (max-width: 1440px){
+        :root{
+          font-size: 50%;
+        }
+      }
+      @media (max-width: 1024px){
+        :root{
+          font-size: 42%;
+        }
+      }
+      @media (max-width: 768px){
+        :root{
+          font-size: 24%;
+        }
+      }
+
+      @media (max-width: 425px){
+        :root{
+          font-size: 19%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="flex">
+      <section class="project">
+        <div class="div1">
+          <h1 class="levelTag">SkillCraft - TechnicalMasterSP</h1>
+          <div class="task">
+            <div class="task1 flex colomn">
+              <h2>Task 01</h2>
+              <h2 class="projectName">Landing Page</h2>
+              <!-- <button><a href="level-01/Task-01/index.html">Click Me</a></button> -->
+              <a href="task-01/index.html" target="_blank"><button>Click Me</button></a>
+            </div>
+            <div class="task2 flex colomn hide">
+              <h2>Task 02</h2>
+              <h2 class="projectName">Personal Portfolio</h2>
+              <a href="#" target="_blank"><button>Click Me</button></a>
+            </div>
+            <div class="task3 flex colomn hide">
+              <h2>Task 03</h2>
+              <h2 class="projectName">Calculator</h2>
+              <a href="#" target="_blank"><button>Click Me</button></a>
+            </div>
+            <div class="task3 flex colomn hide">
+              <h2>Task 04</h2>
+              <h2 class="projectName">Calculator</h2>
+              <a href="#" target="_blank"><button>Click Me</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
