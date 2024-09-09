@@ -1,4 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oleo+Script:wght@400;700&family=Protest+Guerrilla&family=Shadows+Into+Light&display=swap');
+
+main{
+    background-color: #365067;
+    background-color: #294a57;
+}
 .spBg img{
     width: 100%;
     margin-top: 55px;
+}
+
+.spHeading{
+    font-family: "Protest Guerrilla", "Josefin Sans", "Shadows Into Light", "Oleo Script", "Oleo Script", system-ui, sans-serif, cursive;
+    font-weight: 400;
+    font-style: normal;           
 }
