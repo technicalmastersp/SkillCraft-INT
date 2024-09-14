@@ -4,6 +4,9 @@ body{
     background-color: #365067;
     background-color: #294a57;
 }
+.spColor{
+    color: #294a57;
+}
 .spBg img{
     width: 100%;
     margin-top: 55px;

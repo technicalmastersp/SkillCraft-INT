@@ -1,3 +1,5 @@
+let ssp = document.querySelector('.navbar-toggler');
+
 // *****************************************************  for about bank  *****************************************************
 
 const aboutBankBtn = document.getElementById('aboutBankBtn')
@@ -15,7 +17,8 @@ const aboutBankText = `<div class="card text-bg-primary mt-5">
                 </div>`;
 
 aboutBankBtn.addEventListener('click', () => {
-    aboutBank.innerHTML = aboutBankText
+    aboutBank.innerHTML = aboutBankText;
+    ssp.click();
 })
 
 // *****************************************************  for home loan  *****************************************************
@@ -42,7 +45,8 @@ const hoamLoanText = `<div class="card text-bg-success mt-5">
         </div>`;
 
 hoamLoanBtn.addEventListener('click', () => {
-    hoamLoan.innerHTML = hoamLoanText
+    hoamLoan.innerHTML = hoamLoanText;
+    ssp.click();
 })
 
 // *****************************************************  for personal loan  *****************************************************
@@ -66,7 +70,8 @@ const personalLoanText = `<div class="card text-bg-success mt-5">
         </div>`;
 
 personalLoanBtn.addEventListener('click', () => {
-    personalLoan.innerHTML = personalLoanText
+    personalLoan.innerHTML = personalLoanText;
+    ssp.click();
 })
 
 // *****************************************************  for Gold loan  *****************************************************
@@ -94,7 +99,8 @@ const goldLoanText = `<div class="card text-bg-success mt-5">
         </div>`;
 
 goldLoanBtn.addEventListener('click', () => {
-    goldLoan.innerHTML = goldLoanText
+    goldLoan.innerHTML = goldLoanText;
+    ssp.click();
 })
 
 // *****************************************************  for Gold loan  *****************************************************
@@ -123,7 +129,8 @@ const lapLoanText = `<div class="card text-bg-success mt-5">
 </div>`;
 
 lapLoanBtn.addEventListener('click', () => {
-    lapLoan.innerHTML = lapLoanText
+    lapLoan.innerHTML = lapLoanText;
+    ssp.click();
 })
 
 // *****************************************************  for finish line  *****************************************************
