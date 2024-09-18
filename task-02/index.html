@@ -12,12 +12,12 @@
         <!-- <div>SSp</div> -->
     </header>
     <main>
-        <section class="px-3 py-5" >
+        <section class="px-3 py-5 select-none" >
             <div class="flex items-center flex-col gap-5">
                 <div class="w-[17rem] h-[22rem] px-2 py-3 flex flex-col items-center justify-around gap-5 border-8 border-[#353535] rounded-[10%]">
                     <div>
                         <div id="timerDisplay" class="h-44 w-44 border-8 border-[#fba421] rounded-full flex items-center justify-center text-2xl">
-                            <p>00:25:00:00</p>
+                            <p>00:00:00.00</p>
                         </div>
                     </div>
                     <div>
@@ -27,14 +27,16 @@
                                 <div id="resetButton" class="border-2 w-[6.4rem] px-2 py-1 mb-0 font-extrabold cursor-pointer rounded-full text-center">Reset</div>
                             </div>
                             <div>
-                                <div id="stopButton" class="border-2 w-[6.4rem] px-2 py-1 mb-3 font-extrabold cursor-pointer rounded-full text-center">Puase</div>
+                                <div id="stopButton" class="border-2 w-[6.4rem] px-2 py-1 mb-3 font-extrabold cursor-pointer rounded-full text-center">Pause</div>
                                 <div id="lapButton" class="border-2 w-[6.4rem] px-2 py-1 mb-0 font-extrabold cursor-pointer rounded-full text-center">Lap Time</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div id="lapList" class="w-[16rem] h-[16.7rem] flex flex-col items-center justify-center border-8 border-[#353535] rounded-lg"></div>
+                    <div class="w-[16rem] h-[16.7rem] overflow-x-auto flex flex-col items-center justify-center scr select-none">
+                        <ol id="lapList" class="list-decimal"><ol>
+                    </div>
                 </div>
             </div>
         </section>
