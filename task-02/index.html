@@ -9,8 +9,36 @@
 </head>
 <body>
     <header>
-        <div>SSp</div>
+        <!-- <div>SSp</div> -->
     </header>
+    <main>
+        <section class="px-3 py-5" >
+            <div class="flex items-center flex-col gap-5">
+                <div class="w-[17rem] h-[22rem] px-2 py-3 flex flex-col items-center justify-around gap-5 border-8 border-[#353535] rounded-[10%]">
+                    <div>
+                        <div id="timerDisplay" class="h-44 w-44 border-8 border-[#fba421] rounded-full flex items-center justify-center text-2xl">
+                            <p>00:25:00:00</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex gap-3 ">
+                            <div>
+                                <div id="startButton" class="border-2 w-[6.4rem] px-2 py-1 mb-3 font-extrabold text-black bg-[#fba421] border-[#fba421] cursor-pointer rounded-full text-center">Start</div>
+                                <div id="resetButton" class="border-2 w-[6.4rem] px-2 py-1 mb-0 font-extrabold cursor-pointer rounded-full text-center">Reset</div>
+                            </div>
+                            <div>
+                                <div id="stopButton" class="border-2 w-[6.4rem] px-2 py-1 mb-3 font-extrabold cursor-pointer rounded-full text-center">Puase</div>
+                                <div id="lapButton" class="border-2 w-[6.4rem] px-2 py-1 mb-0 font-extrabold cursor-pointer rounded-full text-center">Lap Time</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div id="lapList" class="w-[16rem] h-[16.7rem] flex flex-col items-center justify-center border-8 border-[#353535] rounded-lg"></div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="static/script/script.js"></script>
 </body>
 </html>
