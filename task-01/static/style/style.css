@@ -3,9 +3,12 @@
 body{
     background-color: #365067;
     background-color: #294a57;
+    background-color: #00080b;
 }
 .spColor{
     color: #294a57;
+    color: #00080b;
+    user-select: none;
 }
 .spBg img{
     width: 100%;
