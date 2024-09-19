@@ -5,10 +5,10 @@ let startTime, updatedTime, difference, tInterval;
 let running = false;
 let lapTimes = [];
 const timerDisplay = document.getElementById('timerDisplay');
-const startButton = document.getElementById('startButton');
-const stopButton = document.getElementById('stopButton');
-const resetButton = document.getElementById('resetButton');
-const lapButton = document.getElementById('lapButton');
+const startBtn = document.getElementById('startBtn');
+const pauseBtn = document.getElementById('pauseBtn');
+const resetBtn = document.getElementById('resetBtn');
+const lapTimeBtn = document.getElementById('lapTimeBtn');
 const lapList = document.getElementById('lapList');
 
 function formatTime(ms) {
@@ -24,9 +24,9 @@ function startTimer() {
         running = true;
         startTime = new Date().getTime();
         tInterval = setInterval(updateTime, 10);
-        startButton.disabled = true;
-        stopButton.disabled = false;
-        lapButton.disabled = false;
+        startBtn.disabled = true;
+        pauseBtn.disabled = false;
+        lapTimeBtn.disabled = false;
     }
 }
 
@@ -40,18 +40,18 @@ function stopTimer() {
     if (running) {
         clearInterval(tInterval);
         running = false;
-        startButton.disabled = false;
-        stopButton.disabled = true;
-        lapButton.disabled = false;
+        startBtn.disabled = false;
+        pauseBtn.disabled = true;
+        lapTimeBtn.disabled = false;
     }
 }
 
 function resetTimer() {
     clearInterval(tInterval);
     running = false;
-    startButton.disabled = false;
-    stopButton.disabled = true;
-    lapButton.disabled = true;
+    startBtn.disabled = false;
+    pauseBtn.disabled = true;
+    lapTimeBtn.disabled = true;
     timerDisplay.innerHTML = '00:00:00.00';
     lapTimes = [];
     lapList.innerHTML = '';
@@ -67,7 +67,7 @@ function recordLap() {
     }
 }
 
-startButton.addEventListener('click', startTimer);
-stopButton.addEventListener('click', stopTimer);
-resetButton.addEventListener('click', resetTimer);
-lapButton.addEventListener('click', recordLap);
+startBtn.addEventListener('click', startTimer);
+pauseBtn.addEventListener('click', stopTimer);
+resetBtn.addEventListener('click', resetTimer);
+lapTimeBtn.addEventListener('click', recordLap);

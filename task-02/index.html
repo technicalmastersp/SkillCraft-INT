@@ -12,31 +12,29 @@
         <!-- <div>SSp</div> -->
     </header>
     <main>
-        <section class="px-3 py-5 select-none" >
-            <div class="flex items-center flex-col gap-5">
-                <div class="w-[17rem] h-[22rem] px-2 py-3 flex flex-col items-center justify-around gap-5 border-8 border-[#353535] rounded-[10%]">
+        <section class="px-3 py-5 select-none">
+            <div class="flex items-center flex-col gap-5 lg:flex-row lg:justify-evenly lg:items-start lg:gap-10 lg:pt-5">
+                <div class="w-[17rem] h-[22rem] px-2 py-3 flex flex-col items-center justify-around gap-5 border-8 border-[#353535] rounded-[10%] sm:w-[26rem] sm:h-[34rem] sm:border-[.8rem] lg:order-2 2xl:w-[36rem] 2xl:h-[45.2rem] 2xl:border-[1.3rem]">
                     <div>
-                        <div id="timerDisplay" class="h-44 w-44 border-8 border-[#fba421] rounded-full flex items-center justify-center text-2xl">
+                        <div id="timerDisplay" class="h-44 w-44 border-8 border-[#fba421] rounded-full flex items-center justify-center text-2xl sm:w-[19rem] sm:h-[19rem] sm:border-[.8rem] sm:text-5xl 2xl:w-[27.5rem] 2xl:h-[27.5rem] 2xl:border-[1.3rem] 2xl:text-7xl">
                             <p>00:00:00.00</p>
                         </div>
                     </div>
                     <div>
-                        <div class="flex gap-3 ">
+                        <div class="flex gap-3 2xl:gap-5">
                             <div>
-                                <div id="startButton" class="border-2 w-[6.4rem] px-2 py-1 mb-3 font-extrabold text-black bg-[#fba421] border-[#fba421] cursor-pointer rounded-full text-center">Start</div>
-                                <div id="resetButton" class="border-2 w-[6.4rem] px-2 py-1 mb-0 font-extrabold cursor-pointer rounded-full text-center">Reset</div>
+                                <div id="startBtn" class="border-2 w-[6.4rem] px-2 py-1 mb-3 font-extrabold text-black bg-[#fba421] border-[#fba421] cursor-pointer rounded-full text-center hover:font-semibold active:bg-white active:text-black sm:border-4 sm:w-[10rem] sm:text-2xl sm:mb-4 2xl:border-8 2xl:w-[13.3rem] 2xl:text-4xl 2xl:mb-5 2xl:py-2 ">Start</div>
+                                <div id="resetBtn" class="border-2 w-[6.4rem] px-2 py-1 mb-0 font-extrabold cursor-pointer rounded-full text-center hover:font-semibold active:bg-white active:text-black sm:border-4 sm:w-[10rem] sm:text-2xl sm:mb-0 2xl:border-8 2xl:w-[13.3rem] 2xl:text-4xl 2xl:mb-0 2xl:py-2 ">Reset</div>
                             </div>
                             <div>
-                                <div id="stopButton" class="border-2 w-[6.4rem] px-2 py-1 mb-3 font-extrabold cursor-pointer rounded-full text-center">Pause</div>
-                                <div id="lapButton" class="border-2 w-[6.4rem] px-2 py-1 mb-0 font-extrabold cursor-pointer rounded-full text-center">Lap Time</div>
+                                <div id="pauseBtn" class="border-2 w-[6.4rem] px-2 py-1 mb-3 font-extrabold cursor-pointer rounded-full text-center hover:font-semibold active:bg-white active:text-black sm:border-4 sm:w-[10rem] sm:text-2xl sm:mb-4 2xl:border-8 2xl:w-[13.3rem] 2xl:text-4xl 2xl:mb-5 2xl:py-2 ">Pause</div>
+                                <div id="lapTimeBtn" class="border-2 w-[6.4rem] px-2 py-1 mb-0 font-extrabold cursor-pointer rounded-full text-center hover:font-semibold active:bg-white active:text-black sm:border-4 sm:w-[10rem] sm:text-2xl sm:mb-0 2xl:border-8 2xl:w-[13.3rem] 2xl:text-4xl 2xl:mb-0 2xl:py-2 ">Lap Time</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div class="w-[16rem] h-[16.7rem] overflow-x-auto flex flex-col items-center justify-center scr select-none">
-                        <ol id="lapList" class="list-decimal"><ol>
-                    </div>
+                <div class="lg:order-1">
+                    <div id="lapList" class="w-[16rem] min-h-[16.7rem] flex flex-col items-center justify-center select-none pb-2 pt-5 list-decimal sm:text-3xl lg:pt-0 2xl:text-6xl 2xl:w-[24.5rem]"></div>
                 </div>
             </div>
         </section>
