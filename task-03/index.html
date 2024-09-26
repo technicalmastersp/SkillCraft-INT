@@ -11,25 +11,25 @@
 <body class="bg-[#B218F5]">
     <header></header>
     <main>
-        <div class="section h-full w-full">
-            <div class="grid grid-cols-1 h-[95%] w-[95%] bg-slate-100 gap-5 mx-auto my-2 p-3">
-                <div class="order-2 bg-[#B218F5] flex justify-center flex-col gap-3 m-3 text-3xl">
-                    <!-- <button id="startBtn" class="border-8 border-[#5ce1e6] rounded-2xl px-3 text-white font-extrabold">Start Game</button> -->
-                    <button id="reset-button" class="border-8 border-[#5ce1e6] rounded-2xl px-3 text-white font-extrabold">Reset Game</button>
+        <div class="section h-full w-full select-none">
+            <h1 class="text-center text-white text-5xl font-extrabold underline mt-5"><a href="index.html">Tic Tac Toe</a></h1>
+            <h1 class="text-center text-white text-lg font-semibold mb-8 cursor-pointer"><a href="https://technicalmastersp.github.io/CODSOFT-INT/level-01/Task-02/index.html">technicalmastersp</a></h1>
+            <div class="grid grid-cols-1 h-[95%] w-[95%] gap-5 mx-auto my-2 p-3 md:grid-cols-2 sm:w-[605px] md:w-auto xl:w-[1280px] 2xl:w-[1536px] xl:gap-10">
+                <div class="order-2 bg-[#B218F5] flex justify-center flex-col gap-3 m-3 text-3xl items-center md:order-1 md:gap-7 lg:text-5xl xl:text-6xl 2xl:text-7xl">
+                    <button id="startBtn" class="border-8 border-[#5ce1e6] rounded-2xl px-3 py-1 text-white font-extrabold active:text-[#5ce1e6] hover:bg-[#B218FF] w-64 min-[484px]:w-96 md:w-72 lg:w-[24.5rem] lg:pt-1 lg:pb-3 xl:w-[30rem] xl:pt-2 xl:pb-5 2xl:w-[38rem]" onclick="start()">Start Game</button>
+                    <button id="resetBtn" class="border-8 border-[#5ce1e6] rounded-2xl px-3 py-1 text-white font-extrabold active:text-[#5ce1e6] hover:bg-[#B218FF] w-64 min-[484px]:w-96 md:w-72 lg:w-[24.5rem] lg:pt-1 lg:pb-3 xl:w-[30rem] xl:pt-2 xl:pb-5 2xl:w-[38rem]">Restart Game</button>
                 </div>
-                <div class="order-1 relative"><img src="static/media/boxTemplate.png" alt="boxTemplate" srcset="" class=""/>
-                    <div id="game-board" class="h-full w-full text-white absolute top-0 left-0 grid p-1 grid-cols-3 grid-rows-3 font-extrabold text-5xl gap-12 board z-20">
-                        <!-- <div id="game-board" class="board"> -->
-                            <div class="cell h-full w-full flex items-center justify-center hover:bg-[#5ce1e640]" data-index="0">1</div>
-                            <div class="cell h-full w-full flex items-center justify-center hover:bg-[#5ce1e640]" data-index="1">1</div>
-                            <div class="cell h-full w-full flex items-center justify-center hover:bg-[#5ce1e640]" data-index="2">1</div>
-                            <div class="cell h-full w-full flex items-center justify-center hover:bg-[#5ce1e640]" data-index="3">1</div>
-                            <div class="cell h-full w-full flex items-center justify-center hover:bg-[#5ce1e640]" data-index="4">1</div>
-                            <div class="cell h-full w-full flex items-center justify-center hover:bg-[#5ce1e640]" data-index="5">1</div>
-                            <div class="cell h-full w-full flex items-center justify-center hover:bg-[#5ce1e640]" data-index="6">1</div>
-                            <div class="cell h-full w-full flex items-center justify-center hover:bg-[#5ce1e640]" data-index="7">1</div>
-                            <div class="cell h-full w-full flex items-center justify-center hover:bg-[#5ce1e640]" data-index="8">1</div>
-                        <!-- </div> -->
+                <div class="order-1 relative md:order-2"><img src="static/media/boxTemplate.png" alt="boxTemplate"/>
+                    <div id="game-board" class="h-full w-full text-white absolute top-0 left-0 grid p-4 grid-cols-3 grid-rows-3 font-extrabold text-5xl gap-10 min-[372px]:gap-12 min-[440px]:gap-16 min-[540px]:gap-20 md:gap-14 min-[915px]:gap-[4.25rem] min-[915px]:p-6 lg:gap-20 xl:gap-20 2xl:gap-24 min-[484px]:text-7xl sm:text-8xl md:text-6xl">
+                        <div class="cell h-full w-full cursor-pointer flex items-center justify-center" data-index="0"></div>
+                        <div class="cell h-full w-full cursor-pointer flex items-center justify-center" data-index="1"></div>
+                        <div class="cell h-full w-full cursor-pointer flex items-center justify-center" data-index="2"></div>
+                        <div class="cell h-full w-full cursor-pointer flex items-center justify-center" data-index="3"></div>
+                        <div class="cell h-full w-full cursor-pointer flex items-center justify-center" data-index="4"></div>
+                        <div class="cell h-full w-full cursor-pointer flex items-center justify-center" data-index="5"></div>
+                        <div class="cell h-full w-full cursor-pointer flex items-center justify-center" data-index="6"></div>
+                        <div class="cell h-full w-full cursor-pointer flex items-center justify-center" data-index="7"></div>
+                        <div class="cell h-full w-full cursor-pointer flex items-center justify-center" data-index="8"></div>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,3 @@
     <script src="static/script/index.js"></script>
 </body>
 </html>
-
-<!-- height: inherit !important; width: inherit !important; -->
-<!-- padding: 3px;
-gap: 18px; -->
