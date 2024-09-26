@@ -5,8 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic-Tac-Toe | TechnicalMasterSP</title>
     <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="static/style/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="bg-[#B218F5]">
+    <header></header>
+    <main>
+        <div class="section h-full w-full">
+            <div class="grid grid-cols-1 h-[95%] w-[95%] bg-slate-100 gap-5 mx-auto my-2 p-3">
+                <div class="order-2 bg-[#B218F5] flex justify-center flex-col gap-3 m-3 text-3xl">
+                    <!-- <button id="startBtn" class="border-8 border-[#5ce1e6] rounded-2xl px-3 text-white font-extrabold">Start Game</button> -->
+                    <button id="reset-button" class="border-8 border-[#5ce1e6] rounded-2xl px-3 text-white font-extrabold">Reset Game</button>
+                </div>
+                <div class="order-1 relative"><img src="static/media/boxTemplate.png" alt="boxTemplate" srcset="" class=""/>
+                    <div id="game-board" class="h-full w-full text-white absolute top-0 left-0 grid p-1 grid-cols-3 grid-rows-3 font-extrabold text-5xl gap-12 board z-20">
+                        <!-- <div id="game-board" class="board"> -->
+                            <div class="cell h-full w-full flex items-center justify-center hover:bg-[#5ce1e640]" data-index="0">1</div>
+                            <div class="cell h-full w-full flex items-center justify-center hover:bg-[#5ce1e640]" data-index="1">1</div>
+                            <div class="cell h-full w-full flex items-center justify-center hover:bg-[#5ce1e640]" data-index="2">1</div>
+                            <div class="cell h-full w-full flex items-center justify-center hover:bg-[#5ce1e640]" data-index="3">1</div>
+                            <div class="cell h-full w-full flex items-center justify-center hover:bg-[#5ce1e640]" data-index="4">1</div>
+                            <div class="cell h-full w-full flex items-center justify-center hover:bg-[#5ce1e640]" data-index="5">1</div>
+                            <div class="cell h-full w-full flex items-center justify-center hover:bg-[#5ce1e640]" data-index="6">1</div>
+                            <div class="cell h-full w-full flex items-center justify-center hover:bg-[#5ce1e640]" data-index="7">1</div>
+                            <div class="cell h-full w-full flex items-center justify-center hover:bg-[#5ce1e640]" data-index="8">1</div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="static/script/index.js"></script>
 </body>
 </html>
+
+<!-- height: inherit !important; width: inherit !important; -->
+<!-- padding: 3px;
+gap: 18px; -->
