@@ -7,8 +7,12 @@ let i = 0;
 
 function start() {
     function myFunction() {
-        swal("Good job!", "You clicked the button!", "success");
-        console.log("Function executed");
+        swal({
+            title: "Let\'s Play!",
+            text: "Your game has been started.",
+            type: "success",
+            timer: 1500
+        });
     }
     if (!sessionStorage.getItem("functionExecuted")) {
         myFunction();
@@ -50,7 +54,7 @@ function start() {
             if (board[a] && board[a] === board[b] && board[a] === board[c]) {
                 swal({
                     title: `Congratulation ${board[a]} wins!`,
-                    text: `Player ${board[a]} wins!`,
+                    text: `Player ${board[a]} wins!, Please click restart game and play again!`,
                     imageUrl: "static/media/win.png"
                 });
                 isGameActive = false;
