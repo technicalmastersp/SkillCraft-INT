@@ -5,9 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To DO Lists | TechnicalMAsterSP</title>
     <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="static/style/index.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="bg-[#111000]">
+    <header>
+        <div>
+            <nav>
+                <ol class="text-center py-3 bg-black text-[#D11819] font-extrabold font-mono text-2xl">
+                    <div><a class="hover:text-[#18d137] active:text-[#ffc252]" href="https://technicalmastersp.github.io/CODSOFT-INT/level-01/Task-02/index.html">Technical Master SP</a></div>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="px-5 pt-5">
+            <div class="container p-2 max-w-[37.5rem] m-auto bg-white rounded-lg flex items-center justify-center flex-col">
+                <h1 class="font-extrabold text-xl font-serif text-center text-[#0000ff]">To Do List</h1>
+                <input class="p-3 my-3 border-2 border-solid border-[#ccc] rounded-md focus:border-[#4A90E2] focus:outline-none w-full" style="transition : border-color 0.3s" type="text" id="taskInput" placeholder="Add a new task">
+                <input class="p-3 my-3 border-2 border-solid border-[#ccc] rounded-md focus:border-[#4A90E2] focus:outline-none w-full" style="transition : border-color 0.3s" type="datetime-local" id="taskDate">
+                <button id="addTaskButton" class="py-3 px-4 bg-[#4A90E2] text-white rounded-md cursor-pointer w-full hover:bg-[#357ABD]" style="transition : background 0.3s">Add Task</button>
+                <ul id="taskList" class="list-none mt-5 w-full"></ul>
+            </div>
+            <script src="static/script/index.js"></script>
+        </div>
+    </main>
+    <footer></footer>
 </body>
 </html>

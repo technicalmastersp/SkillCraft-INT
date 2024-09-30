@@ -1,0 +1,71 @@
+button {
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-left: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #e9ecef;
+    margin: 10px 0;
+    border-radius: 5px;
+    position: relative;
+    transition: background 0.3s, transform 0.2s;
+}
+
+li:hover {
+    background: #d1d8dc;
+    transform: scale(1.02);
+}
+
+li span {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #333;
+    flex-grow: 1;
+}
+
+li .date {
+    font-size: 0.9em;
+    color: #666;
+    margin-left: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.completed span {
+    color: lightgray;
+}
+
+.completed .date {
+    color: #999;
+}
+
+button {
+    font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+    input[type="text"], 
+    input[type="datetime-local"], 
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
