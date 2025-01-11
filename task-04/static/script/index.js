@@ -7,6 +7,10 @@ let tasks = [];
 
 const setCurrentDateTime = () => {
     const now = new Date();
+    // Get the local timezone offset (in minutes)
+    const offset = now.getTimezoneOffset(); // This will give you the difference in minutes
+    // Adjust the time to local timezone (add offset in minutes)
+    now.setMinutes(now.getMinutes() - offset);
     const formattedDateTime = now.toISOString().slice(0, 16);
     taskDate.value = formattedDateTime;
 };
